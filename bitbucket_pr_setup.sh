@@ -67,7 +67,7 @@ title=\${title//'-'/' '}
 title=\${(C)title}
 
 # Adding description as list of all commit message
-description=\$(git log --reverse --pretty=format:"* %s" \$target..\$current)
+description=\$(git log --reverse --pretty=format:"* %s" origin/\$target..origin/\$current)
 description=\${description//
 /'\n'}
 
