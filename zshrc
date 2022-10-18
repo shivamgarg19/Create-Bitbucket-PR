@@ -1,4 +1,6 @@
-
+cd
+rm .zshrc
+cat > .zshrc <<EOF
 #### FIG ENV VARIABLES ####
 # Please make sure this block is at the start of this file.
 [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
@@ -110,3 +112,4 @@ export config_type=mongo
 
  #ssh -L 9030:192.168.182.229:27017 tst-connectorsource /Users/shivamgarg/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+EOF
